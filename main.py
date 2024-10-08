@@ -4,6 +4,9 @@ from langchain_groq import ChatGroq
 import os
 from dotenv import load_dotenv
 # Load environment variables
+import pysqlite3
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
