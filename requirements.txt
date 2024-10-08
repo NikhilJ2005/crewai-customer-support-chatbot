@@ -3,4 +3,4 @@ crewai
 langchain-groq
 crewai_tools
 python-dotenv
-
+ pysqlite3-binary 
