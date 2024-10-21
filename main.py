@@ -4,7 +4,7 @@ from langchain_groq import ChatGroq
 import os
 from dotenv import load_dotenv
 # Load environment variables
-import pysqlite3
+__import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 load_dotenv()
